@@ -44,7 +44,7 @@ namespace MyMath
             return min;
         }
 
-        public static double Avq(double[] arr)
+        public static double Avg(double[] arr)
         {
             double avg = 0;
             for (int i = 0; i < arr.Length; i++)

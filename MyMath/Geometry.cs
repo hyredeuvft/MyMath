@@ -10,27 +10,65 @@ namespace MyMath
     {
         public static double SquareTriangle(double side, double high)
         {
-            return (side * high) / 2;
+            if (side < 0 || high < 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return (side * high) / 2;
+            }
         }
 
         public static double SquareSquare(double side)
         {
-            return (side * side);
+            if (side < 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return (side * side);
+            }
+            
         }
 
         public static double SquareRectangle(double side, double high)
         {
-            return (side * high);
+            if (side < 0 || high < 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return (side * high);
+            }
         }
 
         public static double SquareRhombus(double firstdiagonal, double seconddiagonal)
         {
-            return (firstdiagonal * seconddiagonal) / 2;
+            if (firstdiagonal < 0 || seconddiagonal < 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return (firstdiagonal * seconddiagonal) / 2;
+            }
+            
         }
 
         public static double SquareCircle(double radius)
         {
-            return radius * 2 * 3.14;
+            if (radius < 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return radius * 2 * 3.14;
+            }
+            
         }
     }
 }
